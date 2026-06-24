@@ -1,52 +1,51 @@
- 
+# 🐉 The Greedy Dragon
 
+**The Greedy Dragon** é um jogo de estilo *Boss Rush* e *Bullet Hell* desenvolvido como projeto final para a disciplina de **Introdução à Engenharia da Computação (ECO101B)** da **Universidade Federal de Itajubá (UNIFEI)**.
 
-> Open this page at [https://pasoks.github.io/projeto-de-introduo-a-engenharia-2/](https://pasoks.github.io/projeto-de-introduo-a-engenharia-2/)
+O projeto foi totalmente implementado utilizando a plataforma **MakeCode Arcade** em TypeScript, aplicando conceitos estruturados de desenvolvimento de software e programação concorrente não-bloqueante para lidar com a alta densidade de elementos gráficos e projéteis simultâneos.
 
-## Use as Extension
+---
 
-This repository can be added as an **extension** in MakeCode.
+## 📖 História do Jogo
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/pasoks/projeto-de-introduo-a-engenharia-2** and import
+Após os 5 anos mais sombrios de sua história, após incontáveis desafios, longas e excruciantes horas de sofrimento, você finalmente tem seu tão ansiado **DIPLOMA DE ENSINO SUPERIOR**.
 
-## Edit this project
+*“Nada pode me parar!!!”* — Diz você.
 
-To edit this repository in MakeCode.
+Até que você se lembra do seu **EMPRÉSTIMO ESTUDANTIL**. Foram 5 anos sem preocupação, mas agora seu pior pesadelo se tornou realidade: os juros transformaram um simples empréstimo em uma fortuna que ninguém no mundo poderia pagar.
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/pasoks/projeto-de-introduo-a-engenharia-2** and click import
+No bar, afundando as mágoas com seu ex-colega que já fundou uma empresa e é CEO, vocês conversam:
+* *"É impossível! Simplesmente Impossível!"* — Você diz.
+* *"Nem eu tenho todo esse dinheiro. Talvez só um dragão daquelas histórias de criança tem dinheiro nesse nível em seu ninho"* — Falou seu amigo.
 
-#### Metadata (used for search, rendering)
+Enquanto seu amigo ria da piada, sua cabeça já cheia de problemas forma uma ideia genial. *“O que tenho a perder?”* — Pensa. Então, com uma ideia na cabeça e equipamento roubado, você parte para o suposto ninho do dragão para enfrentar perigos e Slimes até chegar ao grande tesouro que limpará seu nome de vez!
 
-* for PXT/arcade
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+---
 
+## 🎮 Mecânicas e Arquitetura Técnica
 
+O motor lógico do jogo foi projetado cirurgicamente para respeitar as limitações de concorrência do MakeCode Arcade, utilizando:
+* **Máquina de Estados de IA:** Padrões dinâmicos e imprevisíveis para os ataques de cada chefe.
+* **Lógica Não-Bloqueante:** Uso estrito de timers paralelos (`setTimeout` e `runInParallel`) em vez de laços de espera bloqueantes, garantindo que a taxa de quadros (FPS) se mantenha estável mesmo com dezenas de projéteis na tela.
+* **Processamento de Imagens Dinâmico:** Algoritmos customizados de varredura de pixels para gerar contornos e transparências em tempo de execução (`outlineAndTransparent`).
 
-> Open this page at [https://pasoks.github.io/projeto-eco101b-dragon/](https://pasoks.github.io/projeto-eco101b-dragon/)
+---
 
-## Use as Extension
+## 👥 Equipe e Créditos
 
-This repository can be added as an **extension** in MakeCode.
+* **Trabalho de Introdução à Engenharia da Computação – ECO101B**
+* **Integrante mais Importante:** Ícaro Victor Ferreira
+* **Integrante mais Criativo:** Marcos Vinícius Santos de Carvalho Macedo
+* **Integrante mais Bonito:** Thiago Mendes Ramos
+* **Luiz Guilherme:** Contrucci Vinhais
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/pasoks/projeto-eco101b-dragon** and import
+**THE GREEDY DRAGON**
 
-## Edit this project
+---
 
-To edit this repository in MakeCode.
+## 🚀 Como Executar
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/pasoks/projeto-eco101b-dragon** and click import
-
-#### Metadata (used for search, rendering)
-
-* for PXT/arcade
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+1. Copie o link deste repositório.
+2. Acesse o [MakeCode Arcade](https://arcade.makecode.com/).
+3. Clique em **Import** (Importar) e selecione **Import URL**.
+4. Cole o link para rodar ou modificar o projeto diretamente no simulador!
