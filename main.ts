@@ -320,10 +320,12 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
         AtualizarCursor()
     }
 })
-function AtaqueDragaoBomba () {
+function AtaqueDragaoBomba() {
     executandoAtaqueDragao = true
     acaoDoBoss = "atacando"
     frameAtual = 0
+    posX = []
+    posY = []
     imgBomba = img`
         . . 2 2 2 2 . . 
         . 2 4 4 4 4 2 . 
@@ -333,7 +335,7 @@ function AtaqueDragaoBomba () {
         2 e 4 4 4 4 e 2 
         . 2 e e e e 2 . 
         . . 2 2 2 2 . . 
-        `
+    `
     for (let index = 0; index < 4; index++) {
         px2 = Math.randomRange(caixaX + 8, caixaX + caixaLargura - 8)
         py2 = Math.randomRange(caixaY + 8, caixaY + caixaAltura - 8)
@@ -358,7 +360,7 @@ function AtaqueDragaoBomba () {
             e2.lifespan = 300
         }
     }, 2000)
-setTimeout(function () {
+    setTimeout(function () {
         if (faseAtual < 3 || transicaoEmAndamento || noMenu) {
             return
         }
@@ -512,7 +514,7 @@ for (let gx2 = 5; gx2 < 160; gx2 += 20) {
 fundo2.fillRect(caixaX, caixaY, caixaLargura, caixaAltura, 15)
         fundo2.drawRect(caixaX, caixaY, caixaLargura, caixaAltura, 1)
     } else if (faseAtual == 2) {
-        bossVidasMax = 15
+        bossVidasMax = 17
         meuBoss = sprites.create(dragaoBoss_stand[0], SpriteKind.Enemy)
         Sons.musicaFaseDg1()
 fundo2 = image.create(160, 120)
@@ -587,7 +589,7 @@ desenharPedra(2, 12, 45)
         fundo2.fillRect(caixaX, caixaY, caixaLargura, caixaAltura, 15)
         fundo2.drawRect(caixaX, caixaY, caixaLargura, caixaAltura, 1)
     } else if (faseAtual == 3) {
-        bossVidasMax = 20
+        bossVidasMax = 25
         meuBoss = sprites.create(dragaoBoss2_stand[0], SpriteKind.Enemy)
         Sons.musicaFaseDg2()
 fundo2 = image.create(160, 120)
