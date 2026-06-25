@@ -37,7 +37,7 @@ O motor lógico do jogo foi projetado cirurgicamente para respeitar as limitaç�
 * **Integrante mais Importante:** Ícaro Victor Ferreira
 * **Integrante mais Criativo:** Marcos Vinícius Santos de Carvalho Macedo
 * **Integrante mais Bonito:** Thiago Mendes Ramos
-* **Luiz Guilherme:** Contrucci Vinhais
+* **Integrante Apoiador:** Luiz Guilherme Contrucci Vinhais
 
 **THE GREEDY DRAGON**
 
